@@ -1,11 +1,11 @@
-# Healing-Targets-Heatmap
+# Raid Healing Targets Visualisation
 
-maybe can expand to include total damage taken and total healing recieved (may have to convert to unit millions, also not sure how i will deal with decimals eg. 4.5M)
-are we able to assign numbers to each coordinate?\
+Visualisation for World of Warcraft. 2D histogram depicting the number of heals cast per raid member in a 20-man raid.
 
-maybe ill add webscraping into this one day too\
+Input: Excel spreadsheet contain casts data from WarcraftLogs and raidframe layout \
+Output: 4x5 2D histogram coloured by number of heals each player recieved
 
 
-Would love to eventually include mouse movement once i find a pain-free way of tracking cursor movements in a vod
-
-maybe if i arrange my raidframes in alphabetical order i wont need to map the players out? just read from data and then put into a 5x4 frame
+Enhancements:
+- Would love to be able to use an API call to scrape information from WCL
+- Raidframes are automatically ordered by role (Tank/Melee/Ranged/Healer). Would be nice to enable such organization in the code so no need to input raidframe manually.
